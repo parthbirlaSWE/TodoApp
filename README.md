@@ -25,3 +25,11 @@ This command will discover and execute all the unit tests within the project. Yo
 ## Further help
 
 To get more help on this project, send an email to parthbirla04@gmail.com
+
+## Config
+
+The API runs on "https://localhost:7052" which can be changed from Properties-> Launch.Json -> applicationURL
+
+## Note
+
+If the application url is changed, ensure the apiUrl in TodoApp-UI -> src -> config.ts is updated accordingly 
