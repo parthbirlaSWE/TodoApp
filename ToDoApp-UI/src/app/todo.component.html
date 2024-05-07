@@ -1,0 +1,37 @@
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-header bg-primary text-white">
+          <h2 class="text-center">My Todo List</h2>
+        </div>
+        <div class="card-body">
+          <div class="input-group mb-3">
+            <input id="newTodoDescription" [(ngModel)]="newTodoDescription" type="text" class="form-control" placeholder="Enter description here">
+            <div class="input-group-append">
+              <button class="btn btn-primary" type="button" (click)="addTodoItem();newTodoDescription = '';">Add Item</button>
+            </div>
+          </div>
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Description</th>
+                <th scope="col">Create Date</th>
+                <th scope="col"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let todoItem of todoList; let i = index">
+                <th scope="row">{{ i + 1 }}</th>
+                <td>{{ todoItem.Description }}</td>
+                <td>{{ todoItem.CreateDate | date: 'medium' }}</td>
+                <td><button type="button" class="btn btn-danger btn-sm" (click)="confirmDelete(todoItem.Id)">Delete</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
