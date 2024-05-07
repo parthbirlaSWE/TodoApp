@@ -18,10 +18,10 @@ Bootstrap: npm install bootstrap
 This project includes unit tests for the API using xUnit. Follow the instructions below to run the tests:
 
 Navigate to the TodoAPI.Tests directory: TodoAPI.Tests
-Run the tests using the dotnet test command: dotnet test
+Run the tests using the "dotnet test" command
 
 This command will discover and execute all the unit tests within the project. You should see the test results displayed in the terminal.
 
 ## Further help
 
-To get more help on this project, send an email on parthbirla04@gmail.com
+To get more help on this project, send an email to parthbirla04@gmail.com
